@@ -32,13 +32,13 @@ const DynamicTable = () => {
       "Challan Number",
     ];
     const rows = data.map((startup) => [
-      startup.startupName,
+      startup.name,
       startup.email,
-      startup.sector,
-      startup.headquarters,
-      startup.linkedinOrWebsite,
-      startup.description,
-      startup.challanNumber,
+      startup.startUpSector,
+      startup.headquarter,
+      startup.linkedin,
+      startup.discription,
+      startup.challan,
     ]);
 
     // Combine the header and rows into a single string
@@ -123,25 +123,25 @@ const DynamicTable = () => {
             teamData.map((startup, index) => (
               <tr key={index}>
                 <td style={{ padding: "10px", border: "1px solid #ddd" }}>
-                  {startup.startupName}
+                  {startup.name}
                 </td>
                 <td style={{ padding: "10px", border: "1px solid #ddd" }}>
                   {startup.email}
                 </td>
                 <td style={{ padding: "10px", border: "1px solid #ddd" }}>
-                  {startup.sector}
+                  {startup.startUpSector}
                 </td>
                 <td style={{ padding: "10px", border: "1px solid #ddd" }}>
-                  {startup.headquarters}
+                  {startup.headquarter}
                 </td>
                 <td style={{ padding: "10px", border: "1px solid #ddd" }}>
-                  {startup.linkedinOrWebsite}
+                  {startup.linkedin}
                 </td>
                 <td style={{ padding: "10px", border: "1px solid #ddd" }}>
                   {startup.description}
                 </td>
                 <td style={{ padding: "10px", border: "1px solid #ddd" }}>
-                  {startup.challanNumber}
+                  {startup.challan}
                 </td>
               </tr>
             ))
