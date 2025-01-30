@@ -11,7 +11,7 @@ const DynamicTable = () => {
           "https://expo-backend-public.onrender.com/all" // Replace with your Expo backend API endpoint
         );
         const data = await response.json();
-        setTeamData(data); // Assuming data is an array directly
+        setTeamData(data.data); // Assuming data is an array directly
       } catch (error) {
         console.error("Error fetching data:", error);
       }
